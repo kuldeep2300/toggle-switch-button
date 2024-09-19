@@ -1,0 +1,52 @@
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-switch{
+    width: 30rem;
+    height: 12rem;
+    background-color: #CBCBCB;
+    border-radius: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.switch{
+    background-color: #CBCBCB;
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s linear;
+    border: 0.4rem solid #CBCBCB;
+}
+
+.on {
+    transform: translateX(180px);
+    background-color: #4caf50;
+}
+
+.off {
+    background-color: #f44336;
+    transform: translateX(0);
+}
+
+.switch-state {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
